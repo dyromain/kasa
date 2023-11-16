@@ -1,11 +1,13 @@
-import header_banner from '../../assets/header_banner.png'
 
-const Banner = () => {
+
+const Banner = ({title,image}) => {
+  
   return (
    
-      <div className='header_banner'>
-        <h1 className='banner_title'>Chez vous, partout et ailleurs</h1>
-        <img src={header_banner} alt='bannière kasa' />
+      <div className='banner'>
+           <img src={image} alt='bannière kasa' className='img_banner' />
+        <h1 className='banner_title'>{title}</h1>
+     
         
       </div>  
     

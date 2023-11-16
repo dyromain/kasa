@@ -1,13 +1,19 @@
-
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 223px;
+  overflow: hidden;
+}
 .banner_title {
-position: absolute;
-z-index: 1;
-color: $color-primary;
-font-size: 48px;
-width: 705px;
-height: 68px;
-top: 145px;
-left: 373px;
+  color: $color-primary;
+  font-size: 48px;
+  z-index: 1;
+}
 
-
+.img_banner {
+  position: absolute;
+  width: 100%;
 }
