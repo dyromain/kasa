@@ -1,0 +1,9 @@
+.hp_gallery {
+    display:flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.hp_gallery>* {
+    flex: 0 0 33.3333%;
+  }

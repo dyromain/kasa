@@ -6,14 +6,36 @@
   justify-content: center;
   height: 223px;
   overflow: hidden;
+  max-width: 95%;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-bottom: 43px;
 }
+
 .banner_title {
   color: $color-primary;
   font-size: 48px;
+  font-weight: 500;
   z-index: 1;
 }
 
 .img_banner {
   position: absolute;
   width: 100%;
+}
+
+@media(max-width: 768px) {
+  .banner {
+    margin-bottom: 18px;
+  }
+  .img_banner {
+    height: 80%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .banner_title {
+    font-size: 24px;
+    width: 62%;
+  }
 }

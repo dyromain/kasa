@@ -1,7 +1,21 @@
 body {
-  margin: 0;
+  max-width: 1440px;
+  padding-top: 40px;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   max-width: 100%;
+
+
+  @media screen and (max-width: 500px) {
+        padding-top: 20px;
+    }
+  
 }
 
-  
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+} 

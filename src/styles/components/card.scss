@@ -1,0 +1,13 @@
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50%;
+ 
+}
+
+.card_img {
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
+    padding: 60px;
+}

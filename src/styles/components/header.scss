@@ -1,18 +1,45 @@
 .header {
-    display: flex;
-    align-items: center;  
-    justify-content: space-between;
-    height:68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding-bottom: 63px;
 }
 
- .menu-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 57px;
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 57px;
+  font-size: 24px;
+  font-weight: 500;
+
+  a {
     color: $color-secondary;
- }
 
- 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .kasa_logo {
+    width: 80%;
+  }
+  .header {
+    padding-bottom: 0;
+  }
 
+  .menu-header {
+    gap: 20px;
+
+    a {
+      font-size: 12px;
+      text-transform: uppercase;
+      text-wrap: nowrap;
+    }
+  }
+}
