@@ -1,9 +1,17 @@
 .hp_gallery {
     display:flex;
-    max-width: 100%;
+    gap: 50px;
     flex-wrap: wrap;
-}
+    padding: 50px;
+    border-radius: 25px;
+    background-color: $color-tertiary;
+    justify-content: space-evenly;
 
-.hp_gallery>* {
-    flex: 0 0 33.3333%;
-  }
+    @media(max-width: 768px) {
+        gap:30px;
+    }
+
+    @media(max-width: 425px) {
+        gap:10px;
+    }
+}
