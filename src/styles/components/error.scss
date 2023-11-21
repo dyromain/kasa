@@ -1,0 +1,29 @@
+.error {
+  padding-bottom: 40px;
+  color: $color-secondary;
+}
+
+.error_msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error_title {
+  font-weight: 700;
+  font-size: 288px;
+  @media screen and (max-width: 768px) {
+    font-size: 140px;
+  }
+}
+
+.error_txt {
+  font-weight: 500;
+  text-align: center;
+}
+
+.hp_return {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}

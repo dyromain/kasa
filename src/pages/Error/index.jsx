@@ -1,12 +1,16 @@
-const Erreur = () => {
-    return (
-        <div>
-            <h1>404</h1>
-            <p> Oups! La page que vous demandez n'existe pas.</p>
-          
-          </div>
+import Header from "../../components/Header"
+import Error from "../../components/Error";
+import Footer from "../../components/Footer"
 
-    );
-  };
-  
-  export default Erreur;
+const NotFound = () => {
+    return(
+        <>
+            <Header />
+            <Error />
+            <Footer /> 
+        </>
+    )
+}
+
+export default NotFound;
+
