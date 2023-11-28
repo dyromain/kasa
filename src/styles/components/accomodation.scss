@@ -1,0 +1,47 @@
+.accomodation_title
+{
+    color: $color-secondary;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.accomodation_location
+{
+    color: $color-secondary;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.accomodation_container
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.accomodation_tags
+{
+    display: flex;
+    gap: 10px;
+
+    button {
+        width:115px;
+        border-radius: 10px;
+        background: $color-secondary;
+        border:none;
+        color:$color-primary;
+    }
+}
+
+.accomodation_collapse
+{
+    display:flex;
+    gap:76px;
+    width: 100%;
+}
+
+
+.collapse_desc, .collapse_equip
+{
+    width:50%
+}

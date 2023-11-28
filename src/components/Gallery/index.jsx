@@ -1,4 +1,4 @@
-import datas from '../../datas/logements.json'
+import datas from '../../datas/accomodations.json'
 import Card from '../Card'
 
 export default function Gallery() {
