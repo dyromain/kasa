@@ -7,8 +7,9 @@
     background-color: $color-tertiary;
     justify-content: space-evenly;
 
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
         gap:30px;
+        padding:0;
     }
 
     @media(max-width: 425px) {

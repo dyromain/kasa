@@ -39,11 +39,12 @@ export default function Accomodation() {
               })}
             </div>
           </div>
-          <div className="accomodation_host">
+          <div className="host_desc">
             <Host host={host} />
-          </div>
+  
           <div className="rating_host">
         <Stars rating={rating} />
+        </div>
       </div>
         </div>
         <div className="accomodation_collapse">
