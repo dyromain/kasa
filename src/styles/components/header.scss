@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   height: 68px;
-  //max-width: 95%;
-  //margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
   padding-bottom: 63px;
 }
 
@@ -25,9 +25,13 @@
   }
 }
 
+a.menu-link.active {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .kasa_logo {
-    width: 80%;
+    width: 70%;
   }
   .header {
     padding-bottom: 0;

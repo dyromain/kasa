@@ -1,22 +1,57 @@
 .info_host {
   display: flex;
-  gap:10px;
-}
-
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  }
+  
 .name_host {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  line-height: 0;
-  color:$color-secondary;
-  font-size:18px;
+  justify-content: flex-end;
+  line-height: 142.6%;
+  color: $color-secondary;
+  font-size: 18px;
   font-weight: 500;
   text-align: right;
+  p{
+    margin:0;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
-.image_host
-{
-  margin-top:24px;
+.image_host {
   border-radius: 70px;
+  height: 64px;
+
+  @media screen and (max-width: 425px) {
+    height: 32px;
+  }
+
+  @media screen and (min-width:425px) and (max-width: 768px) {
+    height: 60px;
+  }
 }
 
+.host_desc {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width:35%;
+  }
+}

@@ -49,14 +49,19 @@ export default function Accomodation() {
         </div>
         <div className="accomodation_collapse">
           <span className="collapse_desc">
-          <Collapse title="Description" content={description} />
+          <Collapse title="Description">
+            <p>{description}</p>
+          </Collapse>
           </span>
           <span className="collapse_equip">
-          <Collapse  title="Équipements" content={equipments} />
+          <Collapse  title="Équipements" content={equipments} >
+            {equipments.map(equipment => <p>{equipment}</p>)}
+          </Collapse>
           </span>
         </div>
       </section>
       <Footer />
     </>
+    
   )
 }

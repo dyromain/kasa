@@ -1,50 +1,58 @@
 .collapse {
-    display: flex;
-flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
-    
+
 .collapse_title {
-        display:flex;
-        align-items: center;
-        padding: 7px 18px;
-        background-color: $color-secondary;
-        border-radius: 5px;
-        justify-content: space-between;
-        
  
-        h3 {
-          font-size:24px;
-          color: $color-primary;
-          margin: 0;
-        }
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  background-color: $color-secondary;
+  border-radius: 5px;
+  justify-content: space-between;
 
-        p {
-          color: $color-secondary;
-          
+  @media screen and (max-width: 768px) {
+    padding: 2px 18px;
+    height: 30px;
+  }
 
-          .collapse_icon {
-            color: $color-primary;
-            cursor: pointer;
-            
-          }
-        }
-      }
+  h3 {
+    font-size: 24px;
+    color: $color-primary;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+
+  p {
+    color: $color-secondary;
+
+    .collapse_icon {
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+}
 
 .collapse_true {
-        background-color: $color-tertiary;
-        width: 100%;  
-        border-radius: 5px; 
+  background-color: $color-tertiary;
+  width: 100%;
+  border-radius: 5px;
 
-  
-        p {
-          font-size:24px;
-          color: $color-secondary;
-          margin: 0 auto;
-          padding: 0.8em;
-          width: 90%;
-        }
-      }
+  p {
+    font-size: 24px;
+    color: $color-secondary;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 90%;
 
-    
-  
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

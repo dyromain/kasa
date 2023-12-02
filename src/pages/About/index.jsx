@@ -7,7 +7,8 @@ import about_banner from '../../assets/about_banner.png'
 
 export default function About() {
   return (
-    <div>
+    <>
+    <div className='about_page'>
       <Header />
       <Banner image={about_banner} />
       <div className="collapse_container">
@@ -16,15 +17,19 @@ export default function About() {
             //<div className="collapse_item">
               <Collapse
                 key={item.id}
-                content={item.content}
+                
                 title={item.title}
-              />
+              >
+                <p>{item.content}</p>
+              </Collapse>
            // </div>
           )
         })}
       </div>
 
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   )
 }

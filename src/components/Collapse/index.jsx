@@ -5,7 +5,7 @@ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 const angleDown = <FontAwesomeIcon icon={faAngleDown} />
 const angleUp = <FontAwesomeIcon icon={faAngleUp} />
 
-export default function Collapse ({ title, content }) {
+export default function Collapse ({ title, children }) {
   //On utilise le hook useState() pour déclarer le state
   const [toggleOpen, setToggle] = useState(false); // le state du toggle est défini "false" par défaut
 
@@ -20,15 +20,15 @@ export default function Collapse ({ title, content }) {
         <h3>{title}</h3>
         <p onClick={open}>
           {toggleOpen ? (
-            <i className="collapse_icon">{angleDown}</i>
-          ) : (
             <i className="collapse_icon">{angleUp}</i>
+          ) : (
+            <i className="collapse_icon">{angleDown}</i>
           )}
         </p>
       </div>
       {/* La description s'affiche si "true"*/}
       <div className="collapse_true">
-        {toggleOpen && <p>{content}</p>}
+        {toggleOpen ? children : null}
       </div>
     </div>
   );
