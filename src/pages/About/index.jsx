@@ -16,7 +16,7 @@ export default function About() {
           return (
             //<div className="collapse_item">
               <Collapse
-                key={item.id}
+                key={item.title}
                 
                 title={item.title}
               >

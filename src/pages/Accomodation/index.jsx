@@ -29,7 +29,7 @@ export default function Accomodation() {
     <>
       <Header />
       <section className="accomodation_page">
-        <Carrousel pictures={pictures} />
+        <Carrousel images={pictures} />
         <div className="accomodation_container">
           <div className="accomodation_datas">
             <h2 className="accomodation_title">{title}</h2>
@@ -41,7 +41,7 @@ export default function Accomodation() {
             </div>
           </div>
           <div className="host_desc">
-            <Host hote={host} />
+            <Host host={host} />
   
           <div className="rating_host">
         <Stars rating={rating} />
@@ -56,7 +56,7 @@ export default function Accomodation() {
           </span>
           <span className="collapse_equip">
           <Collapse  title="Équipements" content={equipments} >
-            {equipments.map(equipment => <p>{equipment}</p>)}
+            {equipments.map(equipment => <p key={equipment}>{equipment}</p>)}
           </Collapse>
           </span>
         </div>
