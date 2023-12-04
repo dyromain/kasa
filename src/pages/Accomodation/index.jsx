@@ -12,6 +12,7 @@ import Stars from '../../components/Stars'
 export default function Accomodation() {
   // on récupère l'id dans l'URL
   const { id } = useParams()
+  
   // on récupère le logement associé à l'id de l'URL
   const accomodation = Accomodations.find(
     (accomodation) => accomodation.id === id
@@ -28,19 +29,19 @@ export default function Accomodation() {
     <>
       <Header />
       <section className="accomodation_page">
-        <Carrousel images={pictures} />
+        <Carrousel pictures={pictures} />
         <div className="accomodation_container">
           <div className="accomodation_datas">
             <h2 className="accomodation_title">{title}</h2>
             <p className="accomodation_location">{location}</p>
             <div className="accomodation_tags">
-              {accomodation.tags.map((tag, index) => {
-                return <button key={index}>{tag}</button>
+              {accomodation.tags.map((tag, tagIndex) => {
+                return <button key={tagIndex}>{tag}</button>
               })}
             </div>
           </div>
           <div className="host_desc">
-            <Host host={host} />
+            <Host hote={host} />
   
           <div className="rating_host">
         <Stars rating={rating} />
